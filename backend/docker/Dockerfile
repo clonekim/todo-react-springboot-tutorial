@@ -1,4 +1,4 @@
-FROM amazoncorretto:11-alpine-jre
+FROM amazoncorretto:11-alpine-jdk
 RUN apk upgrade musl
 RUN apk del linux-pam
 RUN apk --no-cache add tzdata && \
