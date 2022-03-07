@@ -1,0 +1,28 @@
+logging:
+  level:
+    org.hibernate:
+      SQL: debug
+      type:
+        descriptor.sql.BasicBinder: trace
+        EnumType: trace
+    com.koreanair: debug
+
+server:
+  error:
+    include-exception: true
+    include-binding-errors: always
+
+spring:
+  datasource:
+    dirver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/todos
+    username: root
+    password: secret
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format-sql: true
+
