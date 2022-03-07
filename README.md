@@ -313,6 +313,12 @@ _maven_
 mvn package
 ```
 
+#### Docker Image
+
+```
+gradle docker
+```
+
 ### 3. Tip
 
 > ValidationException은 개발 시에는 작동 하지만  
@@ -323,3 +329,5 @@ server:
   error:
     include-binding-errors: always
 ```
+
+
